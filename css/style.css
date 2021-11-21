@@ -1,0 +1,254 @@
+/* ====================================
+        GoogleFonts Link
+===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+/* ====================================
+        Reset CSS
+===================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+body {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-image: url("../images/bus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+body::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #2f3542;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ====================================
+        Navigation CSS
+===================================== */
+nav {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.nav-item li {
+    margin-left: 15px;
+}
+
+.nav-item li a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f5f6fa;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-item li a.active,
+.nav-item li a:hover {
+    background-color: #009432;
+    color: #ffffff;
+}
+
+/* ====================================
+        Booking Area CSS
+===================================== */
+.booking-area {
+    padding: 20px;
+}
+
+.booking-content h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.booking-content p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.booking-card {
+    background-color: #0a3d62;
+    box-shadow: 10px 10px 20px #60a3bc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.booking-card h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.input-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.booking-card input.form-control {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px !important;
+    border: 0;
+    background: #F3F5FF;
+    font-weight: 700;
+    color: #2f3542;
+}
+
+.booking-card button,
+.booking-card button:focus,
+.booking-card input,
+.booking-card input:focus {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-danger {
+    margin-right: 20px;
+}
+
+.calculations {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.calculations .amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculations .amount p {
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.calculations .amount h5,
+.calculations .amount h4 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+hr {
+    border: 2px solid #fff;
+}
+
+.btn-book {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background-color: #52AF3A;
+}
+.complete-area {
+    display: none;
+}
+.completed-booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+.completed-book-modal {
+    padding: 60px;
+    background: #fff;
+    border-radius: 10px;
+}
+.completed-booking p {
+    color: #2f3542;
+}
+.completed-booking .btn-done {
+    display: inline-block;
+    text-align: center;
+    width: unset;
+    margin-top: 30px;
+}
+/* Responsive */
+@media (max-width: 991px) {
+    .booking-content {
+        margin-bottom: 24px;
+    }
+}
+@media (max-width: 575px) {
+    .nav-item li {
+        margin-left: 0;
+    }
+    
+    .nav-item li a {
+        display: block;
+        padding: 8px 10px;
+    }
+    .input-content {
+        display: block;
+    }
+    .input-group {
+        margin: 10px 0;
+    }
+    .calculations {
+        margin: 20px 0;
+        padding: 0;
+    }
+}
